@@ -73,5 +73,32 @@
   text-overflow: ellipsis;
   overflow: hidden;
 }
+/*搜索框*/
+.search{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.keyboard-input {  
+  margin-top:300rpx; 
+  width: 400rpx;
+  height: 80rpx;
+  word-break: break-all;
+  border: 2px solid gainsboro;
+  text-align: center;
+  border-radius: 5rpx;
+}
 
-
+.submit-btn {
+  margin-top: 15rpx;
+  margin-right: 8rpx;
+  line-height: 60rpx;
+  width: 150rpx;
+  height: 60rpx;
+  background-color: #FFCC00;
+  border-radius: 5rpx;
+  color: #fff;
+  text-align: center;
+  font-family: Microsoft Yahei;
+}
