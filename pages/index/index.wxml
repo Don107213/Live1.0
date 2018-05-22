@@ -1,0 +1,20 @@
+<view class="live-container">
+  <view class="navbar">
+    <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+  </view>
+  <view wx:for="{{liveList}}" wx:for-item="item" wx:for-index="idx">
+    <view class="live-item" catchtap='onTapToLive' data-live-id="{{item.liveId}}">
+      <view class='live-anchor-box'>
+        <image src="{{item.avatar}}"></image>
+        <text>{{item.anchorName}}</text>
+      </view>
+      <view class="live-img">
+        <image src="{{item.postImg}}" class="live-image"></image>
+      </view>
+      <view class="live-title">
+        <text>{{item.title}}</text>
+      </view>
+
+    </view>
+  </view>
+</view>
