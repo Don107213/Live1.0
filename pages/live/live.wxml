@@ -19,7 +19,7 @@
     </view>
   </view>
 </view>
-<!--直播栏-->
+<!--直播栏在这-->
 <view class="comment-detail-box">
   <view class="comment-main-box">
     <block wx:for="{{hostList}}" wx:for-item="item" wx:for-index="idx">
